@@ -1,0 +1,16 @@
+
+<div class="all">
+  <div class="container">
+    <h2>Historial de Inventario</h2>
+    <div *ngFor="let mes of meses; let i = index">
+      <div (click)="seleccionarMes(i)">
+        Mes: {{ mes }}
+      </div>
+      <div class="barra-progreso" [style.height]="porcentajes[i] + '%'">
+        {{ porcentajes[i] }}%
+      </div>
+    </div>
+  </div>
+</div>
+
+

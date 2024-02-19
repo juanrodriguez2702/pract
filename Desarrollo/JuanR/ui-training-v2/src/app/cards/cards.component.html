@@ -1,0 +1,12 @@
+<button (click)="push()">prueba</button>
+<button (click)="push2()">prueba2</button>
+<div class="all">
+    <div class="principal">
+        <div class="card" *ngFor="let lista of DatosNgFor">
+                <p class="titulo">{{lista.nombre }}  </p><img class="iconos" [src]="lista.img" alt=""><p class="numero">{{lista.numero}} </p> 
+        </div>
+    </div>
+</div>
+
+
+    

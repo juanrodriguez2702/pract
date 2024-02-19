@@ -1,0 +1,101 @@
+
+     
+  <div class="centrado" >
+
+    <div class="principal1">
+      <div class="barra_invent">
+        <strong class="registro_historicos">Historicos de Inventario</strong>
+        <br>
+        <span class="meses_x_item">item de los mes</span>
+    </div>
+    
+    <div class="mostrar">
+    
+      <div class="barras" >
+        <div id="barra1"  class="Numero progreso"> <p class="parrafo_integ">Regional Caribe</p></div>
+      </div>
+    
+      <div class="barras">
+        <div id="barra2"  class="Numero progreso"><p class="parrafo_integ">Regional sur</p></div>
+      </div>
+    
+      <div class="barras">
+        <div id="barra3"  class="Numero progreso"><p class="parrafo_integ">Regional  Insular</p></div>
+      </div>
+    
+      <div class="barras">
+        <div id="barra4"  class="Numero progreso" ><p class="parrafo_integ">Regional Pacífica</p></div>
+      </div>
+    
+      <div class="barras">
+        <div id="barra5"  class="Numero progreso" ><p class="parrafo_integ">Regional Andina</p></div>
+      </div>
+    
+      <div class="barras">
+        <div id="barra6"  class="Numero progreso"><p class="parrafo_integ">Regional Amazonia</p></div>
+      </div>              
+    </div>
+    
+    
+    
+    <div class="imformacion">
+    
+    <!-- carrusel -->
+    <div>
+      <button  id="Boton_izquierda" class="btn_izquierda" (click)="scrollleft()"><img class="imagen" src="assets/imagen_JM/btnl.png" alt="bi"></button>
+      <button  id="Boton_derecha" class="btn_derecha" (click)="scrollrigth()"><img class="imagen" src="assets/imagen_JM/btnr.png" alt="bd" ></button>
+    </div>
+    
+    <div class="scroll_M" id="content_Scroll">  
+      <button id="btn_mes1" class="  cambios_a meses"  (click)="loadDat('enero', 1)">Ene</button>
+      <button id="btn_mes2" class=" cambios_a meses"  (click)="loadDat('feb', 2)">Feb</button>
+      <button id="btn_mes3" class=" cambios_a meses" (click)="loadDat('marzo', 3)">Mar</button>
+      <button id="btn_mes4" class=" cambios_a meses" (click)="loadDat('abril', 4)">Abr</button>
+      <button id="btn_mes5" class=" cambios_a meses" (click)="loadDat('mayo', 5)">May</button>
+      <button id="btn_mes6" class=" cambios_a meses"  (click)="loadDat('junio', 6)">Jun</button>
+      <button id="btn_mes7" class=" cambios_a meses" (click)="loadDat('julio', 7)">Jul</button>
+      <button id="btn_mes8" class=" cambios_a meses" (click)="loadDat('agosto', 8)">Ago</button>
+      <button id="btn_mes9" class=" cambios_a meses"  (click)="loadDat('septiembre', 9)">Sep</button>
+      <button id="btn_mes10" class=" cambios_a meses"  (click)="loadDat('octubre', 10)">Oct</button>
+      <button id="btn_mes11" class=" cambios_a meses" (click)="loadDat('noviembre', 11)">Nov</button>
+      <button id="btn_mes12" class=" cambios_a meses" (click)="loadDat('diciembre', 12)">Dic</button>
+    </div>
+    
+    
+    <div class="datos_del_scroll">
+      <h2  id="mensajeN1" class="numero ini">0%</h2>
+      <span class="contenedor_porcentajes"><p class="numero_por"></p><img  [classList]="icon" src="assets/imagen_JM/ArrowRight.png" alt="icono de porcentajes"></span>
+    </div>
+    
+      
+    </div>
+    </div>
+  
+  </div>
+   
+  
+  
+  <!-- <div class="barra_invent">
+      <div class="progreso" style="width: 20%;"></div>
+      <div class="progreso" style="width: 90%;"></div>
+      <div class="progreso" style="width: 40%;"></div>
+      <div class="progreso" style="width: 20%;"></div>
+      <div class="progreso" style="width: 50%;"></div>
+      <div class="progreso" style="width: 30%;"></div>
+  
+      <div class="meses">
+          <span class="uno1">Enero</span>
+          <span>Febrero</span>
+          <span>Marzo</span>
+          <span>Abril</span>
+          <span>Mayo</span>
+          <span>Junio</span>
+          <span>Julio</span>
+          <span>Septiembre</span>
+          <span>Octubre</span>
+          <span>Noviembre</span>
+          <span>Diciembre</span>
+      </div>
+  </div>
+   -->
+  

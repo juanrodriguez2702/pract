@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.centrado{
+  place-items: center;
+  display: grid;
+
+}
+
+/*contenedor de los  titulos*/
+.barra_invent{
+  font-family: 'Quicksand', sans-serif;
+  background: #ffffff;
+  height: 12vh;
+  width: 242px;
+  text-align: center;
+}
+
+/*Parrafos-title*/
+.registro_historicos{
+  font-size: 21px;
+  font-weight: 700;
+  color: #712cf1;
+}
+
+.meses_x_item{
+  font-size: 19px;
+  font-weight: 500;
+  color: #712cf1;
+}
+
+/*componente Principal*/
+.principal1{
+  background: #ffffff;
+  height: 391px;
+  width: 301px;
+  place-items: center;
+  display: grid;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px black;
+
+}
+
+/*Content_Barras*/
+.mostrar{
+  width: 243px;
+  height: 156px;
+  display: flex;
+}
+
+/*Progresos de las Barras*/
+.barras{
+  height: 156px;
+  width: 23px;
+  background: #712CEE80;
+  border-radius: 15px 15px 0px 0px;
+  margin-right: 21px;
+  align-items: center;
+  position: relative;
+
+}
+
+.barras:last-child{
+  margin-right: 0px;
+}
+
+
+.progreso{
+  height:var(--h);
+    width: 23px;
+    bottom: 0;
+    background-color: #712cf1;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-wrap:wrap ;
+    margin-right: 21px;
+    animation: aumentar 0s ease;
+    position: absolute;
+}
+
+.progreso:last-child{
+  margin-right: 0px;
+}
+
+/*Scroll de los meses */
+
+.scroll_M{
+  overflow-x: auto;
+    padding: 3px;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    width: 210px;
+    align-items: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    border-top: 2px solid #C5C5D3;
+    border-bottom: 2px solid #C5C5D3;
+    margin-bottom: 10px;
+}
+
+.scroll_M::-webkit-scrollbar{
+  display: none;
+}
+
+
+/* botones de los meses */
+
+.meses{
+padding-left: 9px;
+padding-right: 9px;
+height: 40px;
+border-radius: 10px;
+border-color:rgba(0, 255, 255, 0) ;
+margin-right: 2px;
+color: #6E6E91;
+background: #FFFFFF;
+}
+
+.meses:last-child{
+  margin: auto;
+}
+
+.imformacion{
+  position: relative;
+}
+
+.btn_derecha{
+ position: absolute;
+ right: 0;
+ margin-top: -1px;
+ height: 25px;
+ border: none;
+}
+
+.btn_izquierda{
+  position: absolute;
+ left: 0;
+ margin-top: 1px;
+ height: 25px;
+ border: none;
+}
+
+.imagen{
+  height: 55px;
+  width: 25px;
+
+}
+
+
+/*porcentaje*/
+.datos_del_scroll{
+
+  position: relative;
+  place-content: center;
+  display: flex;
+  height: 50px;
+  margin-left: 21%;
+  width: 180px;
+}
+
+.numero{
+color: #16161D;
+font-size: 32px;
+font: bold;
+font-weight:700;
+font-family: 'Quicksand', sans-serif;
+line-height: 32px;
+margin-left: 10px;
+
+}
+
+/* "aumento" del porcentaje */
+.contenedor_porcentajes{
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+  color: #712CEE;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.icono{
+  display: none;
+  }
+/* animador de barra */
+@keyframes aumentar{
+  0%{height: 0;}
+  100%{height: var(--h);}
+}
+
+.parrafo_integ{
+transform: rotate(-90deg);
+width: 23px;
+bottom: 0;
+display: flex;
+margin-right: 21px;
+position: absolute; 
+font-family: 'Quicksand', sans-serif;
+font-weight: 700;
+color: #ffffffa1;
+white-space: nowrap;
+font-size: 12px;
+
+}
+
+.ini{
+  margin-left: 32%;
+}
+
+/*Meses_Config*/
+@keyframes aumentar{
+  0%{height: 0;}
+  100%{height: var(--h);
+  }
+}
+
+
+
+.Numero{
+  --h:0%;
+  transition: all 2s ease .2s;
+
+}
+
+.enero1{
+  --h: 70%;
+   transition: all 2s ease .2s;      
+}
+.enero2{
+  --h: 60%;
+  transition: all 2s ease .2s;
+}
+.enero3{
+  --h: 46%;
+  transition: all 2s ease .2s;
+}
+.enero4{
+  --h: 65%;
+  transition: all 2s ease .2s;
+}
+.enero5{
+  --h: 75%;
+  transition: all 2s ease .2s;
+}
+.enero6{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+
+.feb1{
+  --h: 55%;
+  transition: all 2s ease .2s;   
+}
+.feb2{
+  --h: 34%;
+  transition: all 2s ease .2s;
+}
+.feb3{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.feb4{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+.feb5{
+  --h: 26%;
+  transition: all 2s ease .2s;
+}
+.feb6{
+  --h: 67%;
+  transition: all 2s ease .2s;
+}
+
+.marzo1{
+  --h: 23%;
+  transition: all 2s ease .2s;   
+}
+.marzo2{
+  --h: 35%;
+  transition: all 2s ease .2s;
+}
+.marzo3{
+  --h: 53%;
+  transition: all 2s ease .2s;
+}
+.marzo4{
+  --h: 54%;
+  transition: all 2s ease .2s;
+}
+.marzo5{
+  --h: 78%;
+  transition: all 2s ease .2s;
+}
+.marzo6{
+  --h: 86%;
+  transition: all 2s ease .2s;
+}
+
+.abril1{
+  --h: 34%;
+  transition: all 2s ease .2s;   
+}
+.abril2{
+  --h: 64%;
+  transition: all 2s ease .2s;
+}
+.abril3{
+  --h: 75%;
+  transition: all 2s ease .2s;
+}
+.abril4{
+  --h: 75%;
+  transition: all 2s ease .2s;
+}
+.abril5{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.abril6{
+  --h: 34%;
+  transition: all 2s ease .2s;
+}
+
+.mayo1{
+  --h: 65%;
+  transition: all 2s ease .2s;   
+}
+.mayo2{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+.mayo3{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.mayo4{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.mayo5{
+  --h: 54%;
+  transition: all 2s ease .2s;
+}
+.mayo6{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+
+.junio1{
+  --h: 67%;
+  transition: all 2s ease .2s;   
+}
+.junio2{
+  --h: 76%;
+  transition: all 2s ease .2s;
+}
+.junio3{
+  --h: 76%;
+  transition: all 2s ease .2s;
+}
+.junio4{
+  --h: 54%;
+  transition: all 2s ease .2s;
+}
+.junio5{
+  --h: 21%;
+  transition: all 2s ease .2s;
+}
+.junio6{
+  --h: 45%;
+  transition: all 2s ease .2s;
+}
+
+.julio1{
+  --h: 34%;
+  transition: all 2s ease .2s;   
+}
+.julio2{
+  --h: 98%;
+  transition: all 2s ease .2s;
+}
+.julio3{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.julio4{
+  --h: 87%;
+  transition: all 2s ease .2s;
+}
+.julio5{
+  --h: 64%;
+  transition: all 2s ease .2s;
+}
+.julio6{
+  --h: 16%;
+  transition: all 2s ease .2s;
+}
+
+.agosto1{
+  --h: 56%;
+  transition: all 2s ease .2s;   
+}
+.agosto2{
+  --h: 76%;
+  transition: all 2s ease .2s;
+}
+.agosto3{
+  --h: 75%;
+  transition: all 2s ease .2s;
+}
+.agosto4{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.agosto5{
+  --h: 31%;
+  transition: all 2s ease .2s;
+}
+.agosto6{
+  --h: 75%;
+  transition: all 2s ease .2s;
+}
+
+.septiembre1{
+  --h: 76%;
+  transition: all 2s ease .2s;   
+}
+.septiembre2{
+  --h: 85%;
+  transition: all 2s ease .2s;
+}
+.septiembre3{
+  --h: 86%;
+  transition: all 2s ease .2s;
+}
+.septiembre4{
+  --h: 42%;
+  transition: all 2s ease .2s;
+}
+.septiembre5{
+  --h: 65%;
+  transition: all 2s ease .2s;
+}
+.septiembre6{
+  --h: 73%;
+  transition: all 2s ease .2s;
+}
+
+.octubre1{
+  --h: 73%;
+  transition: all 2s ease .2s;   
+}
+.octubre2{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+.octubre3{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+.octubre4{
+  --h: 87%;
+  transition: all 2s ease .2s;
+}
+.octubre5{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.octubre6{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+
+.noviembre1{
+  --h: 26%;
+  transition: all 2s ease .2s;
+}
+.noviembre2{
+  --h: 23%;
+  transition: all 2s ease .2s;   
+}
+.noviembre3{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.noviembre4{
+  --h: 45%;
+  transition: all 2s ease .2s;
+}
+.noviembre5{
+  --h: 12%;
+  transition: all 2s ease .2s;
+}
+.noviembre6{
+  --h: 65%;
+  transition: all 2s ease .2s;
+}
+
+.diciembre1{
+  --h: 45%;
+  transition: all 2s ease .2s;   
+}
+.diciembre2{
+  --h: 67%;
+  transition: all 2s ease .2s;
+}
+.diciembre3{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+.diciembre4{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+.diciembre5{
+  --h: 32%;
+  transition: all 2s ease .2s;
+}
+.diciembre6{
+  --h: 23%;
+  transition: all 2s ease .2s;
+}
+
+
+/* conteneido de la barra */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .principal1{
+// margin: 0;
+// padding: 0;
+// background-color: #f4f4f4;
+// }
+
+// .barra_invent{
+// width: 80%;
+// margin: 50px auto;
+// background-color: #fff;
+// border-radius: 8px;
+// overflow: hidden;
+// box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+// }
+
+// .progreso {
+//   height: 40px;
+//   width: 100%;
+//  background-color: #712CEE;
+// margin-bottom: 10px;
+// transition: width 0.5s;
+// border-radius: 15px;
+
+// }
+
+// .meses{
+// display: flex;
+// justify-content: space-between;
+// padding: 10px;
+// color: #333;
+// }
+
+// .uno1{
+// width: 23.07px;
+// height: 156px;
+// top: 154px;
+// left: 1063px;
+// border-radius: 15px;
+
+// }

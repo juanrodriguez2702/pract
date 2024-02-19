@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="./porcentaje.component.scss"> 
+
+<div class="all">
+        
+        
+    <div class="C_meses">
+        
+        <div class="Titulo_i">
+            <strong class="historicos_c">Inventarios Ejecutados</strong>
+            <br>
+            <span class="item_c">basados en total de items</span>
+        </div>
+
+        <div class="display">
+
+          <div id="cambio_porcentajes" class="barra barra0">
+            <!-- <div id="barra1"  class="progreso" style="--h:100%"></div> -->
+          </div>
+        </div>
+            <div class="info_meses">
+                <div class="info" >
+                  <!-- carrusel -->
+                  <div>
+                    <button  id="btn_izquierda" class="btn_izquierda" (click)="scrollleft()"><img class="img" src="assets/img/btnl.png" alt="bi"></button>
+                    <button   id="btn_derecha" class="btn_derecha" (click)="scrollrigth()"><img class="img" src="assets/img/btnr.png" alt="bd"></button>
+                  </div>
+                 
+                  <div class="scroll_c" id="content_Sc">
+                    <button id="btn_meses1" class="  cambio_a mes_b" (click)="loadData('enero')">Ene</button>
+                    <button id="btn_meses2" class=" cambio_a mes_b"   (click)="loadData('febrero')">Feb</button>
+                    <button id="btn_meses3" class=" cambio_a mes_b" (click)="loadData('marzo')">Mar</button>
+                    <button id="btn_meses4" class=" cambio_a mes_b" (click)="loadData('abril')">Abr</button>
+                    <button id="btn_meses5" class=" cambio_a mes_b"  (click)="loadData('mayo')">May</button>
+                    <button id="btn_meses6" class=" cambio_a mes_b" (click)="loadData('junio')">Jun</button>
+                    <button id="btn_meses7" class=" cambio_a mes_b" (click)="loadData('julio')">Jul</button>
+                    <button id="btn_meses8" class=" cambio_a mes_b"  (click)="loadData('agosto')">Ago</button>
+                    <button id="btn_meses9" class=" cambio_a mes_b"  (click)="loadData('septiembre')">Sep</button>
+                    <button id="btn_meses10" class=" cambio_a mes_b" (click)="loadData('octubre')">Oct</button>
+                    <button id="btn_meses11" class=" cambio_a mes_b" (click)="loadData('noviembre')">Nov</button>
+                    <button id="btn_meses12" class=" cambio_a mes_b" (click)="loadData('diciembre')">Dic</button>
+                  </div>
+
+                 
+
+            </div>
+       
+    </div>
+        
+</div>

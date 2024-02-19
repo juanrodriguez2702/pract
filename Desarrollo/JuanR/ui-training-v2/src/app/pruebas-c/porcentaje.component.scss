@@ -1,0 +1,67 @@
+.barra{
+        &,
+        &:before,
+        &:after{
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+        }
+        margin: auto;
+        position: relative;
+        &:before,
+        &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    };
+        &:before {
+            padding: .5em;
+            box-sizing: border-box;
+            font-size: 2rem;
+            line-height: 8rem;
+        }
+        &:after{
+   
+    line-height: 13rem;
+    }
+}
+@function progress($percent){
+    $deg: $percent/100 * 180;
+    @return #{$deg}deg;
+}
+@mixin barra($percent,$skill, $color, $bgcolor){
+    $progress: progress($percent);
+    transform: rotate($progress);
+    background: linear-gradient(
+        0deg,
+        $color 50%,     
+        rgba($color,.2) 50%
+    );
+    &:before,
+    &:after{
+        color: $color;
+    }
+    &:before {
+        content: "#{$skill}";
+        background: $bgcolor content-box;
+        transform: rotate(-#{$progress}) ;
+        text-transform: uppercase;
+    }
+    &:after{
+        content: "#{$percent}%";
+        background: linear-gradient(
+            transparent 50%,
+            $bgcolor 50%,
+        );
+        transform: scale(1.1) rotate(-#{$progress});
+    }
+}
+.barra{
+    @include barra(
+        100, 
+        sikill , 
+        #712CEE, 
+        #ffffff
+         )
+}

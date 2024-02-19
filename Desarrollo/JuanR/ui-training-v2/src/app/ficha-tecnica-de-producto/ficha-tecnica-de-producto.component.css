@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+/* .all{
+    display:inline-flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+} */
+#contenedor {
+    margin-left: 35%;
+    width: 382px;
+    height: 799px;
+    border-radius: 10px;
+    border: 2px;
+    background-color: #FFFFFF;
+    border: #712CEE 2px solid;
+    font-family: 'Quicksand', sans-serif;
+    align-content: center;
+
+    
+    
+}
+.margen{
+    margin: 27px;
+    position: absolute;
+    /* border: #712CEE 2px solid; */
+
+}
+.oliva_t{
+color:#712CEE;
+font-size: 19px;
+font-weight: 700;
+flex-wrap: wrap;
+width: 300px;
+
+}
+.Total{
+    color: #712CEE;
+}
+h2{
+    text-align: center;
+    color: #712CEE;
+}
+.contenedor_T{
+    border-top: #D8D9DD solid 1px;
+    position: relative;
+    margin-top: 17px;
+    padding-top: 9px;
+
+}
+.info{
+    line-height: 12px;
+    font-size: 16px;
+}
+
+
+
+
+/* barra de porcentaje circular */
+
+.porcentage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    position: absolute;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left:290px ;
+    padding-top: 50px;
+
+}
+
+.container2 .card {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.percent {
+    position: relative;
+    width: 55px; /* Reducido a la mitad */
+    height: 55px; /* Reducido a la mitad */
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0);
+    z-index: 1000;
+}
+
+.info_txt {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-bottom: 135%; /* Reducido a la mitad */
+    font-size: 14px;
+    color: #343343;
+}
+
+
+.percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.percent .number h2 {
+    color: #712cf1;
+    font-weight: 600;
+    font-size: 16px; /* Reducido a la mitad */
+    transition: 0.5s;
+}
+
+svg {
+    position: relative;
+    width: 55px; /* Reducido a la mitad */
+    height: 55px; /* Reducido a la mitad */
+    transform: rotate(25deg) !important;
+    
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #712CEE80;
+    stroke-width: 5; /* Reducido a la mitad */
+    stroke-linecap: round !important;
+    transform: translate(2.5px, 2.5px); /* Ajuste para centrar el círculo */
+}
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 154; /* Ajustado a la mitad */
+    stroke-dashoffset: 154; /* Ajustado a la mitad */
+}
+
+.card:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(154 - (154 * var(--p)) / 100);
+    stroke: #712cf1;
+    animation: fillAnimation 3s ease ; /* Agregamos la animación aquí */
+}
+.variable {
+    --p: 75;
+    transition: all 3s ease-out  0.3s;
+}
+@keyframes fillAnimation {
+    0% {
+        stroke-dashoffset: 154;
+        stroke-dasharray: 154;
+    }
+    100%{
+        stroke-dasharray: 154;
+    }
+}

@@ -1,0 +1,33 @@
+
+
+<div class="all">
+  
+    <div class="principal">
+        
+        <div class="button-container">
+          <button (click)="filtrarContenido('activo')" class="btn">Productos Activos</button>
+          <button (click)="filtrarContenido('inactivo')" class="btn">Productos Inactivos</button>
+          <button (click)="filtrarContenido('descontinuados')" class="btn">Productos Descontinuados</button>
+          <button (click)="filtrarContenido('suspendidos')" class="btn">Productos Suspendidos</button>
+          <button (click)="filtrarContenido('pendientes')" class="btn">Pendientes por información</button>
+          <button (click)="filtrarContenido('nuevos')" class="btn">PRODUCTOS NUEVOS!</button>
+        </div>
+        
+        <div class="Contenedor_todos_Acordeones" >
+        
+         <div  class="repetidor" *ngFor="let lista of listaProductos">
+          <div [id]="idElAcordeon + lista.id" class="el_acordeon" *ngIf="lista.estado === listados" (click)="desplegar(lista.id)" >
+            <div class="text_btn"> <p class="titulo-acordeon">{{lista.nombre}}</p><button [id]="idBtnDesple + lista.id" class="btn_desplegar" >{{value}}</button></div>
+          </div>
+          
+          <div [id]="idacordion + lista.id " class="id-product"> 
+            <p class="contenido_p" *ngFor="let cont of lista.contenido">{{cont}}</p>
+          </div>
+         </div> 
+        </div>
+    </div>
+  </div>
+      
+      
+      
+      

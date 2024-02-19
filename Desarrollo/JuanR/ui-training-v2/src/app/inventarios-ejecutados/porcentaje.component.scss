@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+// estilos de las diagrama circular de progreso
+
+.barra{
+    &,
+    &:before,
+    &:after{
+        width: 13rem;
+        height: 13rem;
+        border-radius: 50%;
+        transition: all 2s ease .2s;   
+           
+
+    }
+    margin: auto;
+    position: relative;
+    &:before,
+    &:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+};
+    &:before {
+        padding: .5em;
+        box-sizing: border-box;
+        font-size: 2rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight:700;
+        line-height: 8rem;
+    }
+    &:after{
+
+line-height: 13rem;
+}
+}
+@function progress($percent){
+$deg: $percent/100 * 180;
+@return #{$deg}deg;
+}
+@mixin barra($percent,$skill, $color, $bgcolor){
+$progress: progress($percent);
+transform: rotate($progress);
+
+background: linear-gradient(
+    0deg,
+    $color 50%,     
+    rgba($color,.2) 50%
+);
+&:before,
+&:after{
+    color: black;
+}
+&:before {
+    content: "#{$percent}%";
+    background: $bgcolor content-box;
+    transform: rotate(-#{$progress}) ;
+    text-transform: uppercase;
+    
+    
+}
+&:after{
+    content: "#{""}";
+    background: linear-gradient(
+        transparent 50%,
+        $bgcolor 50%,
+    );
+    
+    transform: scale(1.1) rotate(-#{$progress});
+    
+}
+}
+
+.barra0{
+    @include barra(
+        0, 
+        l , 
+        #400d9e, 
+        #ffffff
+         )
+         
+    }
+
+.enero{
+@include barra(
+    68.87, 
+    l , 
+    #712CEE, 
+    #ffffff
+     )
+}
+
+.febrero{
+    @include barra(
+        30.87, 
+        l , 
+        #712CEE, 
+        #ffffff
+         )
+    }
+
+    .marzo{
+        @include barra(
+            45.50, 
+            l , 
+            #712CEE, 
+            #ffffff
+             )
+        }
+        .abril{
+            @include barra(
+                54, 
+                l , 
+                #712CEE, 
+                #ffffff
+                 )
+            }
+            .mayo{
+                @include barra(
+                    12, 
+                    l , 
+                    #712CEE, 
+                    #ffffff
+                     )
+                }
+                .junio{
+                    @include barra(
+                        54.45, 
+                        l , 
+                        #712CEE, 
+                        #ffffff
+                         )
+                    }
+
+                    .julio{
+                        @include barra(
+                            78.90, 
+                            l , 
+                            #712CEE, 
+                            #ffffff
+                             )
+                        }
+                        .agosto{
+                            @include barra(
+                                34, 
+                                l , 
+                                #712CEE, 
+                                #ffffff
+                                 )
+                            }
+                            .septiembre{
+                                @include barra(
+                                    67, 
+                                    l , 
+                                    #712CEE, 
+                                    #ffffff
+                                     )
+                                }
+                                .octubre{
+                                    @include barra(
+                                        45, 
+                                        l , 
+                                        #712CEE, 
+                                        #ffffff
+                                         )
+                                    }
+                                 .noviembre{
+                                    @include barra(
+                                        90, 
+                                        l , 
+                                        #712CEE, 
+                                        #ffffff
+                                         )
+                                    }
+                           
+                                        .diciembre{
+                                            @include barra(
+                                                87, 
+                                                l , 
+                                                #712CEE, 
+                                                #ffffff
+                                                 )
+                                            }
+                                                                                                                                                                                    
+                
+
+                        

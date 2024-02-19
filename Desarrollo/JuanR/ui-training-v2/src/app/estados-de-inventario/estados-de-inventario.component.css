@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Quicksand:wght@500&display=swap');
+
+.all{
+    place-items: center;
+    display: grid;
+}
+.contenedor_principal{
+    justify-content: center;
+    display: grid;
+    place-items: center;
+    height: 95px;
+    width: 522px;
+   /* background-color: rgb(62, 70, 70); */
+   background-color: #ECECEC;
+}
+.btn_botones{
+    /* background-color: #646464; */
+    padding-top: 3px;
+    margin: auto;
+}
+.button{
+margin-right: 3px;
+font-size: 16px;
+color: #64748B;
+line-height: 24px;
+font-weight: 500;
+font-family: 'Quicksand', sans-serif;
+}
+.btn_boton{
+    padding: 8px 16px 8px 16px;
+    background: #FFFFFF;
+    height: 50px;
+    width: 115px;
+    border: 0cap;
+}
+.btn_botonF{
+    border-radius: 10px 0px 0px 10px;
+    padding: 8px 16px 8px 16px;
+    height: 50px;
+    width: 80px;
+    border: 0cap;
+    background: #FFFFFF; 
+    }
+.btn_botonL{
+    border-radius: 0px 10px 10px 0px;
+    padding: 8px 16px 8px 16px;
+    height: 50px;
+    width: 126px;
+    border: 0cap;
+    background: #FFFFFF;
+    font-size: 16px;
+    color: #64748B;
+    font-family: 'Quicksand', sans-serif;
+}
+/* choose */
+/* .contenedor_principal{
+    height: 120px ;
+} */
+.label{
+    font-size: 9px;
+    margin-right: 16%;
+    color: #b9babb;
+}
+
+
+

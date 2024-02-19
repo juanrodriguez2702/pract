@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&display=swap');
+
+.all{
+  display: grid;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+
+}
+.principal {
+  font-family: 'Quicksand', sans-serif;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  background: #ECECEC;
+  height: 577px;
+  width: 522px;
+  border-radius: 10px;
+ 
+  
+  
+} 
+
+.button-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-gap: 10px;
+}
+
+.btn {
+  width: 195px;
+  height: 35px;
+  font-size: 14px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px #00000040;
+  cursor: pointer;
+  font-weight: 600;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Quicksand', sans-serif;
+}
+.btn:last-child{
+  
+  color: #712CEE;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  border: 1px solid #712CEE;
+
+}
+
+
+.solo_texto{
+  color: #712CEE;
+
+}
+
+.id-product{
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  height: auto;
+  max-height: 0;
+  overflow-y: hidden;
+  background: #ffffff;
+  border-radius: 10px;  
+  
+}
+
+
+.abrir{
+  max-height: 1000px; /* Un valor suficientemente grande para acomodar tu contenido */
+    opacity: 1;
+
+}
+
+.Contenedor_todos_Acordeones{
+  border-radius: 5px;
+  border: 1px;
+  overflow-y: scroll;
+  height: 380px;  
+  width: 406px;
+  align-items: center;
+  margin-top: 0 ;
+}
+
+::-webkit-scrollbar {
+width: 13px; /* Ancho de la barra de desplazamiento */
+
+
+}
+::-webkit-scrollbar-track {
+  background-color: #FFFFFF; /* Color de fondo del riel */
+  border-radius: 10px;
+  
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #712CEE; /* Color  */
+  border-radius: 10px; /* Bordes redondeados del pulgar */
+  
+  
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #660066; /* Cambio de color al pasar el mouse sobre el pulgar */
+}
+
+
+
+.el_acordeon{
+  width: 377px;
+  height: 50px;
+  border-radius: 5px;
+  /* margin-bottom: 10px; */
+  font-size: 16px;
+  text-align: center;
+  background-color: #FFFFFF; 
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+  
+}
+.repetidor{
+  display: grid;
+  grid-gap: 10px;
+}
+
+.borde{
+  border: 2px solid #712CEE;
+  transition: all 1s 
+
+} 
+.contenido_p{
+  padding-left: 5%;
+  padding-bottom: 5px;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+.titulo-acordeon{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  height: auto;
+  width: 300px;
+  text-align: left;
+  padding-right: 20px;
+  margin: 0;
+  padding-top: 15px;  
+ 
+}
+
+.text_btn{
+  color: #712CEE;
+  display: inline-flex;
+  line-height: 45px;
+}
+
+.btn_desplegar{
+  right: 0;
+  
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Borde para hacerlo circular */
+  color: #712CEE;
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  height: 25px;
+  width: 26px;
+  line-height: 0;
+  background-color: #ffffff;
+  margin-top: 4%;
+  font-size: 19px;
+  font-weight: 700;
+  border: #712CEE 2px solid;
+  
+  
+}
+.mostrar {
+  max-height: 1000px; /* Un valor suficientemente grande para acomodar tu contenido */
+  opacity: 1;
+  grid-gap: 20px;
+}
+
+
+
+
+
+

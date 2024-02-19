@@ -1,0 +1,55 @@
+<!--<console class="los"></console>
+<div class="caja">
+    <div class="contenedor">
+            <div class="fila">
+                <button [class.active]="botonActivo === 'activos'" (click)="mostrarLista('activos')">Productos Activos</button>
+                <button [class.active]="botonActivo === 'inactivos'" (click)="mostrarLista('inactivos')">Productos Inactivos</button>
+            </div>
+
+            <div class="fila">
+                <button [class.active]="botonActivo === 'descontinuados'" (click)="mostrarLista('descontinuados')">Productos Descontinuados</button>
+                <button [class.active]="botonActivo === 'suspendidos'" (click)="mostrarLista('suspendidos')">Productos Suspendidos</button>
+            </div>
+
+            <div class="fila">
+                <button [class.active]="botonActivo === 'pendientes'" (click)="mostrarLista('pendientes')">Pendientes por información</button>
+                <button [class.active]="botonActivo === 'nuevos'" class="botonlila" (click)="mostrarLista('nuevos')"><b>PRODUCTOS NUEVOS!</b> </button>
+            </div>
+    </div>
+
+    <div class="container-list">
+        <div class="bucle" *ngFor="let item of listp">
+            <div class="lista">
+                <div class="text_btn"> <p class="titulo">{{lista.nombre}}</p> <button id="idBtnDesple + lista.id" class="btn_desplegar" (click)="desplegar(lista.id)">{{value}}</button> </div>
+            </div>
+        </div>
+    </div>
+
+    <div [id]="idlista + lista.id" class="id-p">
+            <p class="contenido_p" *ngFor="let cont of lista.contenido">{{cont}}</p>
+    </div>
+
+</div>
+----
+<div class="container-list">
+
+    <div class="acordeon_list">  
+        <div *ngFor="let product of producto">
+            <ul>
+                <li class="lista_items">Lista de productos</li>
+                <ul *ngIf="productoSeleccionado === 'AREPA DE HUEVO'" style="transition: all 2s ease;">
+                    <li>Sin existencias</li>
+                    <li>En estado de revisión</li>
+                    <li>No disponible periodicamente</li>
+                    <li>No se encuentra en inventario</li>
+                    <li>No se encuentra en bodega</li>
+                </ul>
+                *ngIf="<if class="home">18=32=>0</if>></if>;else templateName"
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+-->

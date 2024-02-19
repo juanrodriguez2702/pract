@@ -1,0 +1,307 @@
+
+
+.zero{
+    --h: 0%;
+     transition: all 2s ease .2s;      
+}
+
+
+.enero1{
+    --h: 70%;
+     transition: all 2s ease .2s;      
+}
+.enero2{
+    --h: 60%;
+    transition: all 2s ease .2s;
+}
+.enero3{
+    --h: 46%;
+    transition: all 2s ease .2s;
+}
+.enero4{
+    --h: 65%;
+    transition: all 2s ease .2s;
+}
+.enero5{
+    --h: 75%;
+    transition: all 2s ease .2s;
+}
+.enero6{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+
+.feb1{
+    --h: 55%;
+    transition: all 2s ease .2s;   
+}
+.feb2{
+    --h: 34%;
+    transition: all 2s ease .2s;
+}
+.feb3{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.feb4{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+.feb5{
+    --h: 26%;
+    transition: all 2s ease .2s;
+}
+.feb6{
+    --h: 67%;
+    transition: all 2s ease .2s;
+}
+
+.marzo1{
+    --h: 23%;
+    transition: all 2s ease .2s;   
+}
+.marzo2{
+    --h: 35%;
+    transition: all 2s ease .2s;
+}
+.marzo3{
+    --h: 53%;
+    transition: all 2s ease .2s;
+}
+.marzo4{
+    --h: 54%;
+    transition: all 2s ease .2s;
+}
+.marzo5{
+    --h: 78%;
+    transition: all 2s ease .2s;
+}
+.marzo6{
+    --h: 86%;
+    transition: all 2s ease .2s;
+}
+
+.abril1{
+    --h: 34%;
+    transition: all 2s ease .2s;   
+}
+.abril2{
+    --h: 64%;
+    transition: all 2s ease .2s;
+}
+.abril3{
+    --h: 75%;
+    transition: all 2s ease .2s;
+}
+.abril4{
+    --h: 75%;
+    transition: all 2s ease .2s;
+}
+.abril5{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.abril6{
+    --h: 34%;
+    transition: all 2s ease .2s;
+}
+
+.mayo1{
+    --h: 65%;
+    transition: all 2s ease .2s;   
+}
+.mayo2{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+.mayo3{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.mayo4{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.mayo5{
+    --h: 54%;
+    transition: all 2s ease .2s;
+}
+.mayo6{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+
+.junio1{
+    --h: 67%;
+    transition: all 2s ease .2s;   
+}
+.junio2{
+    --h: 76%;
+    transition: all 2s ease .2s;
+}
+.junio3{
+    --h: 76%;
+    transition: all 2s ease .2s;
+}
+.junio4{
+    --h: 54%;
+    transition: all 2s ease .2s;
+}
+.junio5{
+    --h: 21%;
+    transition: all 2s ease .2s;
+}
+.junio6{
+    --h: 45%;
+    transition: all 2s ease .2s;
+}
+
+.julio1{
+    --h: 34%;
+    transition: all 2s ease .2s;   
+}
+.julio2{
+    --h: 98%;
+    transition: all 2s ease .2s;
+}
+.julio3{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.julio4{
+    --h: 87%;
+    transition: all 2s ease .2s;
+}
+.julio5{
+    --h: 64%;
+    transition: all 2s ease .2s;
+}
+.julio6{
+    --h: 16%;
+    transition: all 2s ease .2s;
+}
+
+.agosto1{
+    --h: 56%;
+    transition: all 2s ease .2s;   
+}
+.agosto2{
+    --h: 76%;
+    transition: all 2s ease .2s;
+}
+.agosto3{
+    --h: 75%;
+    transition: all 2s ease .2s;
+}
+.agosto4{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.agosto5{
+    --h: 31%;
+    transition: all 2s ease .2s;
+}
+.agosto6{
+    --h: 75%;
+    transition: all 2s ease .2s;
+}
+
+.septiembre1{
+    --h: 76%;
+    transition: all 2s ease .2s;   
+}
+.septiembre2{
+    --h: 85%;
+    transition: all 2s ease .2s;
+}
+.septiembre3{
+    --h: 86%;
+    transition: all 2s ease .2s;
+}
+.septiembre4{
+    --h: 42%;
+    transition: all 2s ease .2s;
+}
+.septiembre5{
+    --h: 65%;
+    transition: all 2s ease .2s;
+}
+.septiembre6{
+    --h: 73%;
+    transition: all 2s ease .2s;
+}
+
+.octubre1{
+    --h: 73%;
+    transition: all 2s ease .2s;   
+}
+.octubre2{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+.octubre3{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+.octubre4{
+    --h: 87%;
+    transition: all 2s ease .2s;
+}
+.octubre5{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.octubre6{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+
+.noviembre1{
+    --h: 26%;
+    transition: all 2s ease .2s;
+}
+.noviembre2{
+    --h: 23%;
+    transition: all 2s ease .2s;   
+}
+.noviembre3{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.noviembre4{
+    --h: 45%;
+    transition: all 2s ease .2s;
+}
+.noviembre5{
+    --h: 12%;
+    transition: all 2s ease .2s;
+}
+.noviembre6{
+    --h: 65%;
+    transition: all 2s ease .2s;
+}
+
+.diciembre1{
+    --h: 45%;
+    transition: all 2s ease .2s;   
+}
+.diciembre2{
+    --h: 67%;
+    transition: all 2s ease .2s;
+}
+.diciembre3{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+.diciembre4{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}
+.diciembre5{
+    --h: 32%;
+    transition: all 2s ease .2s;
+}
+.diciembre6{
+    --h: 23%;
+    transition: all 2s ease .2s;
+}

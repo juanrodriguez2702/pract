@@ -1,0 +1,152 @@
+<div class="caja">
+
+    <div class="contenedor">
+
+            <div class="fila">
+                <button [class.active]="botonActivo === 'activos'" (click)="mostrarLista('activos')">Productos Activos</button>
+                <button [class.active]="botonActivo === 'inactivos'" (click)="mostrarLista('inactivos')">Productos Inactivos</button>
+            </div>
+
+            <div class="fila">
+                <button [class.active]="botonActivo === 'descontinuados'" (click)="mostrarLista('descontinuados')">Productos Descontinuados</button>
+                <button [class.active]="botonActivo === 'suspendidos'" (click)="mostrarLista('suspendidos')">Productos Suspendidos</button>
+            </div>
+
+            <div class="fila">
+                <button [class.active]="botonActivo === 'pendientes'" (click)="mostrarLista('pendientes')">Pendientes por información</button>
+                <button [class.active]="botonActivo === 'nuevos'" class="botonlila" (click)="mostrarLista('nuevos')"><b>PRODUCTOS NUEVOS!</b> </button>
+            </div>
+
+
+        
+
+            <div *ngIf="listaVisible === 'activos'">
+            <ul class="sin-viñetas">
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === 'AREPA DE HUEVO'" (click)="seleccionarProducto('AREPA DE HUEVO')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <ul *ngIf="productoSeleccionado === 'AREPA DE HUEVO'">
+                    <li>No disponible</li>
+                    <li>Agotado</li>
+                    <li>NO HAY</li>
+                </ul>
+
+
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === 'ANDINA D'" (click)="seleccionarProducto('ANDINA D')">CERVEZA ANDINA DORADA</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === 'GALLETAS S'" (click)="seleccionarProducto('GALLETAS S')">GALLETAS SALADAS X6 TCS</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === 'ARROZ D'" (click)="seleccionarProducto('ARROZ D')">ARROZ DIANA X24 UND</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === 'JUGO 2'" (click)="seleccionarProducto('JUGO 2')">JUGO CITRICO SABOR MANDARINA 2L</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '1'" (click)="seleccionarProducto('1')">MANZANA VERDE X6 UND PLU 098393</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '2'" (click)="seleccionarProducto('2')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '3'" (click)="seleccionarProducto('3')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '4'" (click)="seleccionarProducto('4')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '5'" (click)="seleccionarProducto('5')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '6'" (click)="seleccionarProducto('6')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '7'" (click)="seleccionarProducto('7')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '8'" (click)="seleccionarProducto('8')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '9'" (click)="seleccionarProducto('9')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '10'" (click)="seleccionarProducto('10')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '11'" (click)="seleccionarProducto('11')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '12'" (click)="seleccionarProducto('12')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '13'" (click)="seleccionarProducto('13')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '14'" (click)="seleccionarProducto('14')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+                <li class="lista-elemento"  [class.selected]="productoSeleccionado === '15'" (click)="seleccionarProducto('15')">AREPA DE HUEVO MINI 240 G-CJ12</li>
+
+
+            </ul>
+            </div>
+        
+            <div *ngIf="listaVisible === 'inactivos'">
+            <ul class="sin-viñetas">
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '14'" (click)="seleccionarProducto('14')">ACEITE DE GIRASOL 500 ML</li>
+                <ul *ngIf="productoSeleccionado === '14'">
+                    <li>No disponible</li>
+                    <li>Agotado</li>
+                    <li>NO HAY</li>
+                </ul>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '15'" (click)="seleccionarProducto('15')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '16'" (click)="seleccionarProducto('16')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '17'" (click)="seleccionarProducto('17')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '18'" (click)="seleccionarProducto('18')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '19'" (click)="seleccionarProducto('19')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '20'" (click)="seleccionarProducto('20')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '21'" (click)="seleccionarProducto('21')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '22'" (click)="seleccionarProducto('22')">ACEITE DE GIRASOL 500 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '23'" (click)="seleccionarProducto('23')">ACEITE DE GIRASOL 500 ML</li>
+     
+            </ul>
+            </div>
+        
+            <div *ngIf="listaVisible === 'descontinuados'">
+            <ul class="sin-viñetas">
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '24'" (click)="seleccionarProducto('24')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '25'" (click)="seleccionarProducto('25')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '26'" (click)="seleccionarProducto('26')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '27'" (click)="seleccionarProducto('27')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '28'" (click)="seleccionarProducto('28')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '29'" (click)="seleccionarProducto('29')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '30'" (click)="seleccionarProducto('30')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '31'" (click)="seleccionarProducto('31')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '32'" (click)="seleccionarProducto('32')">ANDINA DORADA LATA</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '33'" (click)="seleccionarProducto('33')">ANDINA DORADA LATA</li>
+
+            </ul>
+            </div>
+
+            <div *ngIf="listaVisible === 'suspendidos'">
+            <ul class="sin-viñetas">
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '34'" (click)="seleccionarProducto('34')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '35'" (click)="seleccionarProducto('35')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '36'" (click)="seleccionarProducto('36')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '37'" (click)="seleccionarProducto('37')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '38'" (click)="seleccionarProducto('38')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '39'" (click)="seleccionarProducto('39')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '40'" (click)="seleccionarProducto('40')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '41'" (click)="seleccionarProducto('41')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '42'" (click)="seleccionarProducto('42')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '43'" (click)="seleccionarProducto('43')">BEDIDA CON TÉ SABOR FRESA 400 ML</li>
+  
+            </ul>
+            </div>
+
+            <div *ngIf="listaVisible === 'pendientes'">
+            <ul class="sin-viñetas">
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '44'" (click)="seleccionarProducto('44')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '45'" (click)="seleccionarProducto('45')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '46'" (click)="seleccionarProducto('46')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '47'" (click)="seleccionarProducto('47')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '48'" (click)="seleccionarProducto('48')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '49'" (click)="seleccionarProducto('49')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '50'" (click)="seleccionarProducto('50')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '51'" (click)="seleccionarProducto('51')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '52'" (click)="seleccionarProducto('52')">AREQUIPE 250 G</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '53'" (click)="seleccionarProducto('53')">AREQUIPE 250 G</li>
+
+            </ul>
+            </div>
+
+            <div *ngIf="listaVisible === 'nuevos'">
+            <ul class="sin-viñetas">
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '54'" (click)="seleccionarProducto('54')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '55'" (click)="seleccionarProducto('55')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '56'" (click)="seleccionarProducto('56')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '57'" (click)="seleccionarProducto('57')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '58'" (click)="seleccionarProducto('58')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '59'" (click)="seleccionarProducto('59')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '60'" (click)="seleccionarProducto('60')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '61'" (click)="seleccionarProducto('61')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '62'" (click)="seleccionarProducto('62')">COCA-COLA SIN AZÚCAR 235 ML</li>
+                <li class="lista-elemento" [class.selected]="productoSeleccionado === '63'" (click)="seleccionarProducto('63')">COCA-COLA SIN AZÚCAR 235 ML</li>
+
+            </ul>
+            </div>
+
+    </div>
+
+  </div>
+  
+
+
+
+  
+ 
+
+      

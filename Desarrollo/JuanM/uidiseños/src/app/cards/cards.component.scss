@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+.principal {
+  display: grid;
+  justify-content: center;
+ 
+ 
+}
+
+.Invent-container {
+  font-family: 'Quicksand', sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #ECECEC;
+  height: auto;
+  width: 700px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  display: inline-flex;
+  grid-gap: 30px;
+}
+
+.columna-Inventarios {
+  height: 77px;
+  width: 305px;
+  background: #fafafa;
+  border-radius: 10px;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  color: #6E6E91;
+  grid-gap: 20px;
+  display: flex;
+
+ 
+}
+
+.titulo{
+  padding-left: 12px;
+  height: 0px;
+  grid-column: 1/2;
+  font-size: 16px;
+  margin-top: 13px;
+  
+}
+
+
+.columna-Inventarios:hover{
+  border: #712CEE 1px solid ;
+
+}
+
+.numeros{
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  width: 118px;
+  height: 24px;
+  line-height: 0px;
+  padding-left: 12px;
+  position: absolute;
+  top: 50px;
+
+}
+
+.imagen{
+
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  grid-gap: 10px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+

@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="./eventosHisotricos.componet.css">
+
+<div class="all">
+    <div class="C_meses">
+        
+        <div class="Titulo_i">
+            <strong class="historicos_c">Historicos de Inventario</strong>
+            <br>
+            <span class="item_c">item x mes</span>
+        </div>
+
+        <div class="display">
+
+          <div class="barra" *ngFor="let barras of mesSeleccionado; ">
+            <div id="barra1"  class="progreso"  [style.--h]="barras"> <p class="parrafo_integrado"> {{barras}} </p></div>
+          </div>
+
+        </div>
+        
+                <div class="info" >
+                  <div>
+                    <button  id="btn_izquierda" class="btn_izquierda" (click)="scrollleft()"><img class="img" src="assets/img/btnl.png" alt="bi"></button>
+                    <button   id="btn_derecha" class="btn_derecha" (click)="scrollrigth()"><img class="img" src="assets/img/btnr.png" alt="bd"></button>
+                  </div>
+                 
+                  <div class="scroll_c" id="content_Sc">
+                    <button id="btn_meses1" class="  cambio_a mes_b" (click)="BuscarMes('enero',1)">Ene</button>
+                    <button id="btn_meses2" class=" cambio_a mes_b"   (click)="BuscarMes('febrero',2)">Feb</button>
+                    <button id="btn_meses3" class=" cambio_a mes_b" (click)="BuscarMes('marzo',3)">Mar</button>
+                    <button id="btn_meses4" class=" cambio_a mes_b" (click)="BuscarMes('abril',4)">Abr</button>
+                    <button id="btn_meses5" class=" cambio_a mes_b"  (click)="BuscarMes('mayo',5)">May</button>
+                    <button id="btn_meses6" class=" cambio_a mes_b" (click)="BuscarMes('junio',6)">Jun</button>
+                    <button id="btn_meses7" class=" cambio_a mes_b" (click)="BuscarMes('julio',7)">Jul</button>
+                    <button id="btn_meses8" class=" cambio_a mes_b"  (click)="BuscarMes('agosto',8)">Ago</button>
+                    <button id="btn_meses9" class=" cambio_a mes_b"  (click)="BuscarMes('septiembre',9)">Sep</button>
+                    <button id="btn_meses10" class=" cambio_a mes_b" (click)="BuscarMes('octubre',10)">Oct</button>
+                    <button id="btn_meses11" class=" cambio_a mes_b" (click)="BuscarMes('noviembre',11)">Nov</button>
+                    <button id="btn_meses12" class=" cambio_a mes_b" (click)="BuscarMes('diciembre',12)">Dic</button>
+                  </div>
+
+                  <div class="datos_scroll">
+                    <h2  id="mensaje1" class="numero ini">0%</h2>
+                    <span class="contenedor_porcentajes"><p id="mensaje2" class="numero_por">  </p><img [classList]="icon"   src="assets/img/ArrowRight.png" alt="icono de porcentajes"></span>
+                  </div>
+
+                </div>
+       
+    </div>
+        
+</div>
+

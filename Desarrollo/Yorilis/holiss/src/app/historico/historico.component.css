@@ -1,0 +1,7 @@
+.barra-progreso {
+    background-color: lightblue;
+    width: 20px;
+    margin-top: 5px;
+    transition: height 0.5s;
+  }
+  
